@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+.selectConvertion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.errorMessage {
+  color: rgb(231, 76, 60);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btnVoltar {
+  margin: 20px 0;
+}
+
+.input input {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  font-size: 2rem;
+  color: #0cbf06;
+  background: black;
+  border: 1px solid #fff;
+  outline: 0;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  background: #19181f;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
