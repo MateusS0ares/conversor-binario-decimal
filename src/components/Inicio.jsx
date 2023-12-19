@@ -1,4 +1,3 @@
-// src/Inicio.jsx
 // eslint-disable-next-line react/prop-types
 const Inicio = ({ onSelectConversion }) => {
   return (

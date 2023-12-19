@@ -1,4 +1,3 @@
-// src/DecimalParaBinario.jsx
 import { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
@@ -11,7 +10,7 @@ const DecimalParaBinario = ({ onBack }) => {
     const value = e.target.value;
     setDecimalValue(value);
 
-    // Adicione a lógica de validação para números de 0 a 9
+    // Lógica de validação para números de 0 a 9
     if (value !== '' && !/^[0-9]+$/.test(value)) {
       setErrorMessage('Você inseriu um número inválido. (Por favor, insira apenas números entre 0 à 9).');
       setBinaryResult(null);
@@ -39,8 +38,8 @@ const DecimalParaBinario = ({ onBack }) => {
       )}
 
       {binaryResult !== null ? (
-        <div>
-          Valor em Binário: <p>{binaryResult}</p>
+        <div className='result'>
+          <h1>{binaryResult}</h1>
         </div>
       ) : null}
       <button className='button btnVoltar' onClick={onBack}>

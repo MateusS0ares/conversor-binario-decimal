@@ -1,4 +1,3 @@
-// src/BinarioParaDecimal.jsx
 import { useState } from 'react';
 import '../App.css';
 
@@ -12,7 +11,7 @@ const BinarioParaDecimal = ({ onBack }) => {
     const value = e.target.value;
     setBinaryValue(value);
 
-    // Adicione a lógica de validação para 0 ou 1
+    // Lógica de validação para 0 ou 1
     if (value !== '' && !/^[01]+$/.test(value)) {
       setErrorMessage('Você inseriu um dígito não binário. (Por favor, insira apenas 0 ou 1).');
       setDecimalResult(null);
@@ -35,8 +34,6 @@ const BinarioParaDecimal = ({ onBack }) => {
       <div className='input'>
         <input className='input' type="text" value={binaryValue} onChange={handleInputChange} />
       </div>
-
-      
 
       {(errorMessage === '' && binaryValue !== '' && decimalResult === null) && (
         <p>Aguardando um número binário válido...</p>
